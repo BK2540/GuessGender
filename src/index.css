@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('./assets/bg-guess.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: #191919;
+}
+
+.main_button {
+    @apply bg-[#ff9b3d] rounded-[50px] text-white px-4 py-2 text-base md:text-lg md:px-8 md:py-4 font-poppins drop-shadow-md hover:drop-shadow-lg hover:scale-105 transition-all delay-100 ease-in-out;
+
+}
+
+.flex-center {
+    @apply flex justify-center items-center;
+  }
+  
+  .flex-start {
+    @apply flex justify-start items-start;
+  }
+  
+  .flex-end {
+    @apply flex justify-end items-center;
+  }
+  
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
